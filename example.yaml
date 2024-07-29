@@ -1,0 +1,17 @@
+help_env:
+  raw_envs:
+    train: coinrun-easy
+    dev: coinrun-hard
+    test: coinrun-hard
+  agents:
+    weak_policy_path: some_path
+    strong_policy_path: some_path
+help_policy:
+  cls: Skyline
+  model:
+    cls: Impala
+    hidden_size: 256
+algorithm:
+  cls: PPO
+  n_iters: 1000
+  learning_rate: 0.0001
